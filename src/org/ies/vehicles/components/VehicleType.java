@@ -1,4 +1,5 @@
 package org.ies.vehicles.components;
 
-public class VehicleType {
+public enum VehicleType {
+    Truck, Motorbike, Car
 }
