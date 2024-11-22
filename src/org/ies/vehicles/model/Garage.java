@@ -6,9 +6,9 @@ import java.util.Objects;
 public class Garage {
     private String name;
     private String direction;
-    private String[] vehicles;
+    private Vehicle[] vehicles;
 
-    public Garage(String direction, String name, String[] vehicles) {
+    public Garage(String direction, String name, Vehicle[] vehicles) {
         this.direction = direction;
         this.name = name;
         this.vehicles = vehicles;
@@ -22,7 +22,7 @@ public class Garage {
         return name;
     }
 
-    public String[] getVehicles() {
+    public Vehicle[] getVehicles() {
         return vehicles;
     }
 
@@ -34,7 +34,7 @@ public class Garage {
         this.name = name;
     }
 
-    public void setVehicles(String[] vehicles) {
+    public void setVehicles(Vehicle[] vehicles) {
         this.vehicles = vehicles;
     }
 
