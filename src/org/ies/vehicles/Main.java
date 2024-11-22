@@ -1,31 +1,21 @@
 package org.ies.vehicles;
 
+import org.ies.vehicles.components.VehicleReader;
 import org.ies.vehicles.model.Garage;
 import org.ies.vehicles.model.Vehicle;
 import org.ies.vehicles.model.VehicleType;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Vehicle vehicle1 = new Vehicle(
-                "azul",
-                "SAS7F3",
-                200,
-                VehicleType.Car
-        );
+        Scanner scanner = new Scanner(System.in);
+        VehicleReader vehicleReader = new VehicleReader(scanner);
+        Vehicle vehicle1 = vehicleReader.read();
 
-        Vehicle vehicle2 = new Vehicle(
-                "rojo",
-                "FYG793",
-                220,
-                VehicleType.Motorbike
-        );
+        Vehicle vehicle2 = vehicleReader.read();
 
-        Vehicle vehicle3 = new Vehicle(
-                "negro",
-                "8DFV29",
-                150,
-                VehicleType.Truck
-        );
+        Vehicle vehicle3 = vehicleReader.read();
 
         Vehicle[] vehicles = {vehicle1,vehicle2,vehicle3};
 
