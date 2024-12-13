@@ -8,9 +8,9 @@ public class Garage {
     private String direction;
     private Vehicle[] vehicles;
 
-    public Garage(String direction, String name, Vehicle[] vehicles) {
-        this.direction = direction;
+    public Garage(String name, String direction, Vehicle[] vehicles) {
         this.name = name;
+        this.direction = direction;
         this.vehicles = vehicles;
     }
 
